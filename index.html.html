@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hira Shakir - Resume</title>
+    <link rel="stylesheet" href="proti.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .resume-container {
+            max-width: 1000px;
+            margin: 120px auto;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 2rem;
+            border: 2px solid var(--main-color);
+            box-shadow: 0 0 25px var(--main-color);
+        }
+
+        .resume-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .resume-header h1 {
+            font-size: 4rem;
+            color: var(--main-color);
+            margin-bottom: 1rem;
+            text-shadow: 0 0 10px var(--main-color);
+        }
+
+        .resume-header p {
+            font-size: 1.8rem;
+            color: var(--text-color);
+        }
+
+        .resume-section {
+            margin-bottom: 3rem;
+        }
+
+        .resume-section h2 {
+            font-size: 2.5rem;
+            color: var(--main-color);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--main-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .resume-section p {
+            font-size: 1.6rem;
+            color: var(--text-color);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .skill-item {
+            background: rgba(0, 180, 216, 0.1);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            border: 1px solid var(--main-color);
+            text-align: center;
+        }
+
+        .skill-item i {
+            font-size: 3rem;
+            color: var(--main-color);
+            margin-bottom: 1rem;
+        }
+
+        .skill-item h3 {
+            font-size: 1.8rem;
+            color: var(--text-color);
+        }
+
+        .education-item {
+            margin-bottom: 2rem;
+        }
+
+        .education-item h3 {
+            font-size: 2rem;
+            color: var(--main-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .education-item p {
+            font-size: 1.6rem;
+            color: var(--text-color);
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-info a {
+            color: var(--text-color);
+            font-size: 1.6rem;
+            transition: 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--main-color);
+            text-shadow: 0 0 10px var(--main-color);
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: var(--main-color);
+            color: var(--text-color);
+            border-radius: 2rem;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: var(--hover-color);
+            box-shadow: 0 0 25px var(--main-color);
+        }
+    </style>
+</head>
+<body>
+    <video id="background-video" autoplay loop muted poster="pic2.jpg">
+        <source src="vedio.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="resume-container">
+        <div class="resume-header">
+            <h1>Hira Shakir</h1>
+            <p>Web Developer & Software Engineer</p>
+        </div>
+
+        <div class="resume-section">
+            <h2>About Me</h2>
+            <p>I am a multidisciplinary web developer with fluency in Python, C++, and decentralized ledger technologies. Adept at architecting resilient systems, I synthesize elegant solutions through database orchestration and digital fluency in Microsoft Office ecosystems. My approach blends technical acuity with inventive problem-solving.</p>
+        </div>
+
+        <div class="resume-section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class='bx bxl-python'></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-item">
+                    <i class='bx bxl-javascript'></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-item">
+                    <i class='bx bxl-html5'></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-item">
+                    <i class='bx bxl-css3'></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-item">
+                    <i class='bx bx-network-chart'></i>
+                    <h3>Networking</h3>
+                </div>
+                <div class="skill-item">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>C++</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>BS Computer Science</h3>
+                <p>University of Haripur</p>
+                <p>Current CGPA: 3.03/4.0</p>
+            </div>
+            <div class="education-item">
+                <h3>Intermediate</h3>
+                <p>Islamic International Public School and College Haripur</p>
+                <p>Grade: A (871/1100)</p>
+            </div>
+            <div class="education-item">
+                <h3>Matriculation</h3>
+                <p>Bright Vision Model School And College Haripur</p>
+                <p>Grade: A+ (983/1100)</p>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h2>Experience</h2>
+            <div class="education-item">
+                <h3>Front-End Developer & Python Programmer</h3>
+                <p>Techno Tech - Online Internship</p>
+                <p>Building responsive web pages using HTML, CSS, and JavaScript, along with backend scripting in Python.</p>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/hira-shakir-38051b276" target="_blank"><i class='bx bxl-linkedin'></i> LinkedIn</a>
+                <a href="https://github.com/hira123454" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+                <a href="https://www.instagram.com/hirashakir81" target="_blank"><i class='bx bxl-instagram'></i> Instagram</a>
+                <a href="mailto:hirashakir03@gmail.com"><i class='bx bxl-gmail'></i> Email</a>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="index.html" class="back-btn">Back to Portfolio</a>
+        </div>
+    </div>
+</body>
+</html> 
